@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    position: fixed;
+    background: black; 
+    color: white;
+    width: 100vw;
+    height: 60px;
+    top: 0;
+    left: 0;
+}
+
+.navbarHeading {
+    padding: 20px;
+}
+
+.searchBar {
+    margin: 90px 20px 20px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#searchInput {
+    padding: 10px;
+    width: 100%;
+    border: 2px solid black;
+    margin-right: 10px;
+    height: 50px;
+    font-size: 20px;
+}
+
+#searchInput::placeholder {
+    color: black;
+    font-size: 20px;
+}
+
+#searchBtn {
+    background: black;
+    color: white;
+    padding: 10px 40px;
+    border: 2px solid black;
+    font-size: 20px;
+    height: 50px;
+}
+
+#buttons {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    margin-top: 30px;
+}
+
+#buttons button {
+    padding: 10px 30px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+ #table {
+    border: 2px solid black;
+    border-collapse: collapse;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 20px;
+    margin-bottom: 20px;
+}
+
+th, td{
+    border: 2px solid black;
+    column-gap: 0;
+    width: 100vw;
+    border-collapse: collapse;
+    height: 50px;
+    margin: 0px 20px;
+}
+
+#tableData {
+    display: block;
+}
+
+#id {
+    width: 5%;
+    text-align: center;
+}
+
+#tableData td img {
+    border: 1px solid black;
+    border-radius: 50%;
+    height: 30px;
+}
+
+#fname {
+    border-right: none;
+    width: 22%;
+    text-align: left;
+    padding-left: 20px;
+}
+
+#gender {
+    width: 10%;
+    text-align: center;
+}
+
+#class {
+    width: 8%;
+    text-align: center;
+}
+
+#marks {
+    width: 8%;
+    text-align: center;
+}
+
+#passing {
+    width: 10%;
+    text-align: center;
+}
+
+#email {
+    text-align: left;
+    padding-left: 10px;
+}

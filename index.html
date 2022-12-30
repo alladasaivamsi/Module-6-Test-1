@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal</title>
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="container">
+        <h2 class="navbarHeading">Student Portal</h2>
+    </div>
+
+    <!-- Search Bar -->
+    <div class="searchBar">
+        <input type="text" placeholder="Search" id="searchInput" onkeyup="search()">
+        <button id="searchBtn">Search</button>
+    </div>  
+
+    <!-- searchButtons -->
+    <div id="buttons">
+        <button id="increasingOrderBtn" onclick="increasingOrder()">Sort A<i class='bx bx-right-arrow-alt'></i>Z</button>
+        <button id="decreasingOrderBtn" onclick="decreasingOrder()">Sort Z<i class='bx bx-right-arrow-alt'></i>A</button>
+        <button id="marksSortingBtn" onclick="marksSorting()">Sort By Marks</button>
+        <button id="passSortingBtn" onclick="passSorting()">Sort By Passing</button>
+        <button id="classSortingBtn" onclick="classSorting()">Sort By Class</button>
+        <button id="genderSortingBtn" onclick="genderSorting()">Sort By Gender</button>
+    </div>
+    
+    <!-- Table -->
+    <table id="table">
+        <tr id="tableHeading">
+            <th id="id">ID</th>
+            <th id="fname">Name</th>
+            <th id="gender">Gender</th>
+            <th id="class">Class</th>
+            <th id="marks">Marks</th>
+            <th id="passing">Passing</th>
+            <th id="email">Email</th>
+        </tr>
+        <tr id="tableData">
+        </tr>
+    </table>
+
+    <script src="script.js"></script>
+    <script src="MOCK_DATA.json"></script>
+</body>
+</html>
